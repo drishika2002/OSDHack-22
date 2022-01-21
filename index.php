@@ -54,7 +54,7 @@
                 ><i class="material-icons">&#xE5C4;</i></a
               >
               <h2>LOGIN</h2>
-              <form method="post" action="">
+              <form method="post" action="login.php">
                 <input type="email" placeholder="Email" name="email" required />
                 <input
                   type="password"
