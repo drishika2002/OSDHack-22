@@ -28,10 +28,5 @@
 
   ## SCREENSHOTS FOR MID REVIEW
   
-  <img src="">
-  
-  <br>
-  
-  <img scr="">
   
   
