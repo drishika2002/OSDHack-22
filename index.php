@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Registration Page(Login/SignUp)</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -987,7 +987,7 @@
                 name="password2"
                 required
               />
-              <button class="btn_sign_up" name="sumbit">SIGN UP</button>
+              <button class="btn_sign_up" name="submit">SIGN UP</button>
             </form>
           </div>
         </div>
