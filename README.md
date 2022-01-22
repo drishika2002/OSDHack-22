@@ -33,9 +33,13 @@
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss2.png">
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss3.png">
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss4.png">
+  
   ### 📌LOGIN-SIGNUP PAGE
+  
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/login.gif">
+  
   ### 📌LOST-FOUND FORM
+  
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss5.PNG">  
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss6.PNG">  
   
