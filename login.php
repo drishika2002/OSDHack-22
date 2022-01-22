@@ -1,9 +1,10 @@
 <?php
+session_start();
 if (isset($_POST['submit']) )
 {
 
      $con = mysqli_connect("localhost","root","");
-     mysqli_select_db($con, "meme");
+     mysqli_select_db($con, "petsite");
      if(mysqli_error($con)){
          die("connection to this database failed due to".mysqli_connect_error());
      }
@@ -13,13 +14,13 @@ if (isset($_POST['submit']) )
      $result= mysqli_query($con,$s);
      $num = mysqli_num_rows($result);
 
-if( $num ==1){
-    header('location:home.html');
-}
-else{
-	header('location:index.php');
-}
+    if($num){
+        header('location:index.php');
+    }
+    else{
+        echo "<script>alert('Your account does not exist... Please create one!'); window.location='register.php'</script>";
+    }
 
-     mysqli_close($con);
-}
+        mysqli_close($con);
+    }
 ?>

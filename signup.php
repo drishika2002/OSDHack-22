@@ -2,7 +2,7 @@
 if (isset($_POST['submit']) )
 {
      $con = mysqli_connect("localhost","root","");
-     mysqli_select_db($con, "meme");
+     mysqli_select_db($con, "petsite");
      if(mysqli_error($con)){
          die("connection to this database failed due to".mysqli_connect_error());
      }
@@ -21,9 +21,8 @@ if (isset($_POST['submit']) )
     else{
         $sql="INSERT INTO userregistration ( email, username, number,password) VALUES ( '$_POST[email]', '$_POST[username]', '$_POST[number]', '$_POST[password]')";
         mysqli_query($con, $sql);
-        header('location:home.html');
+        echo "<script>alert('Registration successful! Please proceed with log in process!'); window.location='register.php'</script>";
     }
-     
 
      mysqli_close($con);
 
