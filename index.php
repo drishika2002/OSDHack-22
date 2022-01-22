@@ -959,7 +959,7 @@
             <h2>SIGN UP</h2>
             <form
               method="post"
-              action="signin.php"
+              action="signup.php"
               enctype="multipart/form-data"
             >
               <input type="email" placeholder="Email" name="email" required />
