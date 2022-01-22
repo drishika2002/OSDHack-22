@@ -28,7 +28,7 @@
 <br>
 
   ## SCREENSHOTS FOR MID REVIEW
-  
+  ###HOME PAGE
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss1.png">
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss2.png">
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss3.png">
