@@ -24,6 +24,4 @@
 * <a href ="https://github.com/HimanshiBaliyan">Himanshi Baliyan</a>
 * <a href ="https://github.com/kgoel-kg">Khushi Goel</a>
 * <a href ="https://github.com/palakkhurana102">Palak Khurana</a>
-
-<img src="">
 <br>
