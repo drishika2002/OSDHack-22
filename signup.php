@@ -6,7 +6,8 @@ if (isset($_POST['sumbit']) )
      if(mysqli_error($con)){
          die("connection to this database failed due to".mysqli_connect_error());
      }
-     
+     $password = $_POST['password'];
+     $password2 = $_POST['password2'];
      $s="select * from userregistration where username='$_POST[username]'";
      $result= mysqli_query($con,$s);
      $num = mysqli_num_rows($result);
@@ -24,6 +25,6 @@ if (isset($_POST['sumbit']) )
     }
 
      mysqli_close($con);
+
 }
 ?>
-	
