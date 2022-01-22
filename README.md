@@ -41,7 +41,7 @@
   
   ### 📌LOST-FOUND FORM
   
-  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss5.PNG">  
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss5.png">  
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss6.PNG">  
   
   
