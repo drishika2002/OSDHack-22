@@ -1,4 +1,5 @@
-# OSDHack'22 (Open Hackathon Project)
+# OSDHack'22 
+(Open Hackathon Project)
 
 ## FURIESRescue
 ### Web Pages:
