@@ -19,7 +19,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="index.css" />
 
     <title>FURIES-Rescue website</title>
   </head>
