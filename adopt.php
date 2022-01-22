@@ -46,9 +46,9 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom">
         <div class="container">
-          <a class="navbar-brand" href="#!"
-            ><span class="logo1">Furies</span
-            ><span class="logo2" style="color: #ef8172">rescue</span></a
+          <a class="navbar-brand" href="home.html"
+            ><span class="logo1"><i class="fas fa-paw"></i>FURIES</span
+            ><span class="logo2" style="color: #000">Rescue</span></a
           >
           <button
             class="navbar-toggler"
@@ -64,25 +64,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-3">
-                <a class="nav-link" href="#!">Offer</a>
+                <a class="nav-link links" href="lost_found.html"
+                  >Lost Request</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">Features</a>
+                <a class="nav-link links" href="lost_found.html"
+                  >Found Request</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">Portfolio</a>
+                <a class="nav-link links" href="adopt.php">Adoption</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">Reference</a>
+                <a class="nav-link links" href="#features">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">Contact</a>
+                <a class="nav-link links" href="#end">Contact</a>
               </li>
             </ul>
           </div>
@@ -99,27 +97,27 @@
 
       <div class="card-group">
         <div class ="col-lg-4 col-md-6">
-        <div class="card">
-          <img src="cat.jpg" class="card-img-top" alt="cat">
-          <div class="card-body">
-            <h3 class="card-title"><strong>Oggy</strong></h3>
-            <p class="card-text">
-                <ul>
-                    <li>Size: </li>
-                    <li>Age: </li>
-                    <li>Breed: </li>
-                </ul>
-            </p>
+          <div class="card">
+            <img src="assets/cat.jpg" class="card-img-top" alt="cat">
+            <div class="card-body">
+              <h3 class="card-title"><strong>Oggy</strong></h3>
+              <p class="card-text">
+                  <ul>
+                      <li>Size: </li>
+                      <li>Age: </li>
+                      <li>Breed: </li>
+                  </ul>
+              </p>
+            </div>
+            
+            <div class="card-footer">
+              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            </div>
           </div>
-          
-          <div class="card-footer">
-            <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
-          </div>
-        </div>
         </div>
         <div class ="col-lg-4 col-md-6">
         <div class="card">
-          <img src="dog.jpg" class="card-img-top" alt="dog" />
+          <img src="assets/dog.jpg" class="card-img-top" alt="dog" />
           <div class="card-body">
             <h3 class="card-title"><strong>Sheru</strong></h3>
             <p class="card-text">
@@ -137,23 +135,23 @@
         </div>
 
         <div class ="col-lg-4 col-md-6">
-        <div class="card">
-          <img src="parrot.jpg" class="card-img-top" alt="parrot" />
-          <div class="card-body">
-            <h3 class="card-title"><strong>Mitto</strong></h3>
-            <p class="card-text">
-                <ul>
-                    <li>Size: </li>
-                    <li>Age: </li>
-                    <li>Breed: </li>
-                </ul>
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+          <div class="card">
+            <img src="assets/parrot.jpg" class="card-img-top" alt="parrot" />
+            <div class="card-body">
+              <h3 class="card-title"><strong>Mitto</strong></h3>
+              <p class="card-text">
+                  <ul>
+                      <li>Size: </li>
+                      <li>Age: </li>
+                      <li>Breed: </li>
+                  </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            </div>
           </div>
         </div>
-      </div>
 
         <?php
           $result = mysqli_query($conn,"SELECT * FROM picture;");
@@ -169,22 +167,22 @@
             // echo "<br>";
             // echo "<br>"; -->
             <div class="col-lg-4 col-md-6">
-            <div class="card">
-              <?php echo '<img src="'.$row['image'].'" class="card-img-top" alt="parrot">';?> 
-              <div class="card-body">
-                <h3 class="card-title"><strong>Mitto</strong></h3>
-                <p class="card-text">
-                    <ul>
-                        <li>Size: <?php echo $row['image_id']; ?></li>
-                        <li>Age: <?php echo $row['name']; ?></li>
-                        <li>Breed: </li>
-                    </ul>
-                </p>
+              <div class="card">
+                <?php echo '<img src="'.$row['image'].'" class="card-img-top" alt="parrot">';?> 
+                <div class="card-body">
+                  <h3 class="card-title"><strong>Mitto</strong></h3>
+                  <p class="card-text">
+                      <ul>
+                          <li>Size: <?php echo $row['image_id']; ?></li>
+                          <li>Age: <?php echo $row['name']; ?></li>
+                          <li>Breed: </li>
+                      </ul>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+                </div>
               </div>
-              <div class="card-footer">
-                <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
-              </div>
-            </div>
             </div>
           <?php  $i++; }?>
       </div>
@@ -199,62 +197,123 @@
       </h2>
 
       <div class="card-group">
-        <div class="card">
-          <img src="dog1.jpg" class="card-img-top" alt="dog"/>
-          <div class="card-body">
-            <h3 class="card-title"><strong>Bob</strong></h3>
-            <p class="card-text">
-              <ul>
-                  <li>Size: </li>
-                  <li>Age: </li>
-                  <li>Breed: </li>
-              </ul>
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="cat1.jpg" class="card-img-top" alt="cat" />
-          <div class="card-body">
-            <h3 class="card-title"><strong>Olli</strong></h3>
-            <p class="card-text">
+        <div class ="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/dog1.jpg" class="card-img-top" alt="dog"/>
+            <div class="card-body">
+              <h3 class="card-title"><strong>Bob</strong></h3>
+              <p class="card-text">
                 <ul>
                     <li>Size: </li>
                     <li>Age: </li>
                     <li>Breed: </li>
                 </ul>
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            </div>
           </div>
         </div>
 
-        <div class="card">
-          <img src="parrot1.jpg" class="card-img-top" alt="parrot" />
-          <div class="card-body">
-            <h3 class="card-title"><strong>Mitti</strong></h3>
-            <p class="card-text">
-                <ul>
-                    <li>Size: </li>
-                    <li>Age: </li>
-                    <li>Breed: </li>
-                </ul>
-            </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+        <div class ="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/cat1.jpg" class="card-img-top" alt="cat" />
+            <div class="card-body">
+              <h3 class="card-title"><strong>Olli</strong></h3>
+              <p class="card-text">
+                  <ul>
+                      <li>Size: </li>
+                      <li>Age: </li>
+                      <li>Breed: </li>
+                  </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            </div>
           </div>
         </div>
+
+
+        <div class ="col-lg-4 col-md-6">
+          <div class="card">
+            <img src="assets/parrot1.jpg" class="card-img-top" alt="parrot" />
+            <div class="card-body">
+              <h3 class="card-title"><strong>Mitti</strong></h3>
+              <p class="card-text">
+                  <ul>
+                      <li>Size: </li>
+                      <li>Age: </li>
+                      <li>Breed: </li>
+                  </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            </div>
+          </div>
+        </div>
+
+        <?php
+          $result = mysqli_query($conn,"SELECT * FROM picture;");
+
+          $i=0;
+          while($row = mysqli_fetch_array($result)) { ?>
+            <!-- // echo $row['image_id'];
+            // echo "<br>";
+            // echo $row['name'];
+            // echo "<br>";
+            // echo '<img src="'.$row['image'].'">';
+            // echo "<br>";
+            // echo "<br>";
+            // echo "<br>"; -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <?php echo '<img src="'.$row['image'].'" class="card-img-top" alt="parrot">';?> 
+                <div class="card-body">
+                  <h3 class="card-title"><strong>Mitto</strong></h3>
+                  <p class="card-text">
+                      <ul>
+                          <li>Size: <?php echo $row['image_id']; ?></li>
+                          <li>Age: <?php echo $row['name']; ?></li>
+                          <li>Breed: </li>
+                      </ul>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+                </div>
+              </div>
+            </div>
+          <?php  $i++; }?>
       </div>
     </section>
 
-    <footer class="end-footer">
+    <footer class="end" id="end">
       <div class="container">
-        <div class="text-center" style="color: #fff">@copyright</div>
+        <div class="row">
+          <div class="col-2 sm-0"></div>
+          <div class="col-3 sm-12">
+            <i class="fal fa-copyright"></i>
+            Designed by Techie Divas
+          </div>
+          <div class="col-5 sm-0"></div>
+          <div class="col-2 sm-12">
+            <ul class="footer-link">
+              <li>
+                <a class="nav-link" href="#!">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <script
