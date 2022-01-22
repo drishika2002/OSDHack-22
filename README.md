@@ -1,8 +1,8 @@
 # OSDHack'22 (Open Hackathon Project)
 
 # FURIESRescue
-<p> FURIESRescue is a website that focuses on the well being of animals.
-  
+<p> FURIESRescue is a website that focuses on the well being of animals and spreading awareness among the society. It helps to connect the pets with their love ones. For pets who unfortunately got disconnected from their loved ones, this website provides them a gold chance to connect with someone who needs them. </p>
+
 ## 📋 WEB PAGES:
 
 * Registration (Login/SignUp)
