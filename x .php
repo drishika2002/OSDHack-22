@@ -41,6 +41,12 @@ if (isset($_POST['submit']) )
        type='text/jscript'>alert('Success!!.')</script>";
        
      }
-     
+     else
+     {
+        $sql="INSERT INTO found ( pettype, breed , line1 , line2, city , state, zip , country,colour ,gender ,size ,age ,detail ,firstname,lastname,area,num,email,info,image) VALUES ( '$pettype', '$breed', '$line1','$line2','$city', '$state','$zip','$country','$colour','$gender','$size','$age','$detail','$firstname','$lastname','$area','$num','$email','$info')";
+        mysqli_query($con, $sql);
+        echo "<script
+type='text/jscript'>alert('Success!!.')</script>";
+}
 }
 ?>
