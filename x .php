@@ -9,10 +9,6 @@ if (isset($_POST['submit']) )
      }
     
          $w = $_POST['type'];
-         if(empty($_POST['day']))
-         {
-             echo "hii";
-         };
          $pettype= $_POST['pet'];
          $breed= $_POST['q80_howDid'];
          $line1 = $_POST['line1'];
@@ -37,14 +33,14 @@ if (isset($_POST['submit']) )
      {
         $sql="INSERT INTO lf ( pettype, breed , line1 , line2, city , state, zip , country,colour ,gender ,size ,age ,detail ,firstname,lastname,area,num,email,info,image) VALUES ( '$pettype', '$breed', '$line1','$line2','$city', '$state','$zip','$country','$colour','$gender','$size','$age','$detail','$firstname','$lastname','$area','$num','$email','$info','$image_id')";
         mysqli_query($con, $sql);
-       echo "<script
-       type='text/jscript'>alert('Success!!.')</script>";
+       echo"Registration successful";
        
      }
      else
      {
-        $sql="INSERT INTO found ( pettype, breed , line1 , line2, city , state, zip , country,colour ,gender ,size ,age ,detail ,firstname,lastname,area,num,email,info,image) VALUES ( '$pettype', '$breed', '$line1','$line2','$city', '$state','$zip','$country','$colour','$gender','$size','$age','$detail','$firstname','$lastname','$area','$num','$email','$info')";
+        $sql="INSERT INTO found ( pettype, breed , line1 , line2, city , state, zip , country,colour ,gender ,size ,age ,detail ,firstname,lastname,area,num,email,info,image) VALUES ( '$pettype', '$breed', '$line1','$line2','$city', '$state','$zip','$country','$colour','$gender','$size','$age','$detail','$firstname','$lastname','$area','$num','$email','$info','$image_id')";
         mysqli_query($con, $sql);
+        /*echo"Registration successful";*/
         echo "<script
 type='text/jscript'>alert('Success!!.')</script>";
 }
