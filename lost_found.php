@@ -148,7 +148,7 @@
       .supernova {
         height: 100%;
         background-repeat: repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-position: center top;
       }
       
