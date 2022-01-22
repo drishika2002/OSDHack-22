@@ -2,7 +2,7 @@
 if (isset($_POST['submit']) )
 {
      $con = mysqli_connect("localhost","root","");
-     mysqli_select_db($con, "petsite");
+     mysqli_select_db($con, "meme");
      if(mysqli_error($con)){
          die("connection to this database failed due to".mysqli_connect_error());
      }
