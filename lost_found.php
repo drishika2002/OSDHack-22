@@ -1,4 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <!DOCTYPE html>
 <html class="supernova"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -197,13 +196,13 @@
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_15" class="form-radio" id="input_15_0" name="type" value="lost" />
-              <label id="label_input_15_0" for="input_15_0"> Lost </label>
+              <label id="label_input_15_0" for="input_15_0" required> Lost </label>
             </span>
             <span class="form-radio-item" style="clear:left">
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_15" class="form-radio" id="input_15_1" name="type" value="found" />
-              <label id="label_input_15_1" for="input_15_1"> Found </label>
+              <label id="label_input_15_1" for="input_15_1" required > Found </label>
             </span>
             
           </div>
@@ -214,7 +213,7 @@
         <div id="cid_73" class="form-input">
           <div data-wrapper-react="true" class="extended notLiteMode">
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="tel" class="form-textbox validate[limitDate]" id="month_73" name="month" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_73 off" aria-labelledby="label_73 sublabel_73_month"  />
+              <input type="tel" class="form-textbox validate[limitDate]" id="month_73" name="month" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_73 off" aria-labelledby="label_73 sublabel_73_month"  required/>
               <span class="date-separate" aria-hidden="true">
                 Â -
               </span>
@@ -222,13 +221,13 @@
             </span>
             <span class="form-sub-label-container" style="vertical-align:top">
               <input type="tel" class="form-textbox validate[limitDate]" id="day_73" name="day" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_73 off" aria-labelledby="label_73 sublabel_73_day" />
-              <span class="date-separate" aria-hidden="true">
+              <span class="date-separate" aria-hidden="true" required>
                 Â -
               </span>
               <label class="form-sub-label" for="day_73" id="sublabel_73_day" style="min-height:13px" aria-hidden="false" > Day </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="tel" class="form-textbox validate[limitDate]" id="year_73" name="q73_date73[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_73 off" aria-labelledby="label_73 sublabel_73_year"  />
+              <input type="tel" class="form-textbox validate[limitDate]" id="year_73" name="q73_date73[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="section-input_73 off" aria-labelledby="label_73 sublabel_73_year" required />
               <label class="form-sub-label" for="year_73" id="sublabel_73_year" style="min-height:13px" aria-hidden="false"> Year </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top">
@@ -586,7 +585,7 @@
       <li class="form-line" data-type="control_textbox" id="colour">
         <label class="form-label form-label-left form-label-auto" id="colour" for="input_80"> Colour: </label>
         <div id="cid_80" class="form-input">
-          <input type="text" id="input_80" name="colour" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" placeholder=" " data-component="textbox" aria-labelledby="label_80" />
+          <input type="text" id="input_80" name="colour" data-type="input-textbox" class="form-textbox" data-defaultvalue="" size="20" value="" placeholder=" " data-component="textbox" aria-labelledby="label_80" required/>
         </div>
       </li>
       
@@ -599,19 +598,19 @@
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_17" class="form-radio" id="input_17_0" name="gender" value="Male" />
-              <label id="label_input_17_0" for="input_17_0"> Male </label>
+              <label id="label_input_17_0" for="input_17_0" required=""> Male </label>
             </span>
             <span class="form-radio-item" style="clear:left">
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_17" class="form-radio" id="input_17_1" name="gender" value="Female" />
-              <label id="label_input_17_1" for="input_17_1"> Female </label>
+              <label id="label_input_17_1" for="input_17_1" required=""> Female </label>
             </span>
             <span class="form-radio-item" style="clear:left">
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_17" class="form-radio" id="input_17_2" name="gender" value="Gender unknown" />
-              <label id="label_input_17_2" for="input_17_2"> Gender Unknown </label>
+              <label id="label_input_17_2" for="input_17_2" required=""> Gender Unknown </label>
             </span>
           </div>
         </div>
@@ -624,19 +623,19 @@
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_40" class="form-radio" id="input_40_0" name="q40_doYou40" value="Small (0-20 lbs)." />
-              <label id="label_input_40_0" for="input_40_0"> Small (0-20 lbs). </label>
+              <label id="label_input_40_0" for="input_40_0" required="required"> Small (0-20 lbs). </label>
             </span>
             <span class="form-radio-item" style="clear:left">
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_40" class="form-radio" id="input_40_1" name="q40_doYou40" value="Medium (25-50 lbs)." />
-              <label id="label_input_40_1" for="input_40_1"> Medium (25-50 lbs). </label>
+              <label id="label_input_40_1" for="input_40_1" required="required"> Medium (25-50 lbs). </label>
             </span>
             <span class="form-radio-item" style="clear:left">
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_40" class="form-radio" id="input_40_2" name="q40_doYou40" value="Large (Over 50 lbs)." />
-              <label id="label_input_40_2" for="input_40_2"> Large (Over 50 lbs). </label>
+              <label id="label_input_40_2" for="input_40_2" required="required"> Large (Over 50 lbs). </label>
             </span>
           </div>
         </div>
@@ -649,31 +648,31 @@
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_18" class="form-radio" id="input_18_0" name="q18_describeYour" value="Baby" />
-              <label id="label_input_18_0" for="input_18_0"> Baby. </label>
+              <label id="label_input_18_0" for="input_18_0" required="required"> Baby. </label>
             </span>
             <span class="form-radio-item" style="clear:left">
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_18" class="form-radio" id="input_18_1" name="q18_describeYour" value="Young Adult." />
-              <label id="label_input_18_1" for="input_18_1"> Young Adult. </label>
+              <label id="label_input_18_1" for="input_18_1" required="required"> Young Adult. </label>
             </span>
             <span class="form-radio-item" style="clear:left">
               <span class="dragger-item">
               </span>
               <input type="radio" aria-describedby="label_18" class="form-radio" id="input_18_2" name="q18_describeYour" value="Adult." />
-              <label id="label_input_18_2" for="input_18_2"> Adult. </label>
+              <label id="label_input_18_2" for="input_18_2" required="required"> Adult. </label>
             </span>
             <span class="form-radio-item" style="clear:left">
                 <span class="dragger-item">
                 </span>
                 <input type="radio" aria-describedby="label_18" class="form-radio" id="input_18_3" name="q18_describeYour" value="Senior" />
-                <label id="label_input_18_3" for="input_18_3"> Senior. </label>
+                <label id="label_input_18_3" for="input_18_3" required="required"> Senior. </label>
               </span>
               <span class="form-radio-item" style="clear:left">
                 <span class="dragger-item">
                 </span>
                 <input type="radio" aria-describedby="label_18" class="form-radio" id="input_18_4" name="q18_describeYour" value="Unknown age." />
-                <label id="label_input_18_4" for="input_18_4"> Unknown age. </label>
+                <label id="label_input_18_4" for="input_18_4" required="required"> Unknown age. </label>
               </span>
           </div>
         </div>
@@ -681,7 +680,7 @@
       
       
       <li class="form-line" data-type="control_checkbox" id="id_44">
-        <label class="form-label form-label-left form-label-auto" id="label_44" for="input_44"> Pet Was (Check all that Apply): </label>
+        <label class="form-label form-label-left form-label-auto" id="label_44" for="input_44" required> Pet Was (Check all that Apply): </label>
         <div id="cid_44" class="form-input">
           <div class="form-single-column" role="group" aria-labelledby="label_44" data-component="checkbox">
             <span class="form-checkbox-item" style="clear:left">
@@ -761,13 +760,13 @@
           <div data-wrapper-react="true">
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
               <input type="tel" id="input_8_area" name="area" class="form-textbox" data-defaultvalue="" autoComplete="section-input_8 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_8 sublabel_8_area" />
-              <span class="phone-separate" aria-hidden="true">
+              <span class="phone-separate" aria-hidden="true" required>
                 Â -
               </span>
               <label class="form-sub-label" for="input_8_area" id="sublabel_8_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
-              <input type="tel" id="input_8_phone" name="number" class="form-textbox" data-defaultvalue="" autoComplete="section-input_8 tel-local" value="" data-component="phone" aria-labelledby="label_8 sublabel_8_phone" />
+              <input type="tel" id="input_8_phone" name="number" class="form-textbox" data-defaultvalue="" autoComplete="section-input_8 tel-local" value="" data-component="phone" aria-labelledby="label_8 sublabel_8_phone" required/>
               <label class="form-sub-label" for="input_8_phone" id="sublabel_8_phone" style="min-height:13px" aria-hidden="false"> Phone Number </label>
             </span>
           </div>
@@ -795,7 +794,7 @@
         <div id="cid_28" class="form-input-wide jf-required">
         <tr>
           <td>Upload Your Image:</td>
-          <td><input type="file" name="image" /></td>
+          <td><input type="file" name="image" required/></td>
         </tr>
       </table>
       <br />
