@@ -1,0 +1,91 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: rgb(212, 14, 14);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: rgb(88, 226, 8) !important;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #1b0c01;
+}
+.nav-link {
+  font-size: 18px;
+}
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(97, 96, 96, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+}
+.logo1 {
+  background-color: black;
+  padding: 5px;
+  color: #fff;
+}
+.circle {
+  border: 10px solid black;
+}
+
+.section {
+  margin: 100px;
+  margin-top: 0;
+}
+
+h2 {
+  text-align: center;
+}
+#features {
+  padding: 6% 14%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 4.25%;
+}
+
+.icons {
+  align-items: center;
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icons:hover {
+  color: #ff4c68;
+}
+.quotesbg {
+  height: auto;
+  background-color: #ef8172;
+}
+.quotes {
+  width: 80%;
+}
+.speak {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.card-img-top {
+  height: 350px;
+  overflow: hidden;
+}
+.mt-sm-5 {
+  margin-top: 5vh;
+}
+.lg-3 {
+  width: 200px;
+}
