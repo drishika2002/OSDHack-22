@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['sumbit']) )
+if (isset($_POST['submit']) )
 {
      $con = mysqli_connect("localhost","root","");
      mysqli_select_db($con, "meme");
@@ -21,8 +21,9 @@ if (isset($_POST['sumbit']) )
     else{
         $sql="INSERT INTO userregistration ( email, username, number,password) VALUES ( '$_POST[email]', '$_POST[username]', '$_POST[number]', '$_POST[password]')";
         mysqli_query($con, $sql);
-        echo"Registration successful";
+        header('location:home.html');
     }
+     
 
      mysqli_close($con);
 
