@@ -2,18 +2,11 @@
       $servername = "localhost";
       $username = "root";
       $password = "";
-      $dbname = "petsite";
+      $dbname = "form";
 
       $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-      // if (!$conn) 
-      // {
-      //   die("Connection failed: " . mysqli_connect_error());
-      // }
-      // else
-      // {
-      //   echo "Connectivity successful!";
-      // }
+      
 ?>
 
 
@@ -154,18 +147,12 @@
         </div>
 
         <?php
-          $result = mysqli_query($conn,"SELECT * FROM picture;");
+          $result = mysqli_query($conn,"SELECT * FROM lf;");
 
           $i=0;
           while($row = mysqli_fetch_array($result)) { ?>
-            <!-- // echo $row['image_id'];
-            // echo "<br>";
-            // echo $row['name'];
-            // echo "<br>";
-            // echo '<img src="'.$row['image'].'">';
-            // echo "<br>";
-            // echo "<br>";
-            // echo "<br>"; -->
+            
+           
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <?php echo '<img src="'.$row['image'].'" class="card-img-top" alt="parrot">';?> 
@@ -173,10 +160,11 @@
                   <h3 class="card-title"><strong>Mitto</strong></h3>
                   <p class="card-text">
                       <ul>
-                          <li>Size: <?php echo $row['image_id']; ?></li>
-                          <li>Age: <?php echo $row['name']; ?></li>
-                          <li>Breed: </li>
+                          <li>Size: <?php echo $row['size']; ?></li>
+                          <li>Age: <?php echo $row['age']; ?></li>
+                          <li>Breed:  <?php echo $row['breed']; ?></li>
                       </ul>
+                      
                   </p>
                 </div>
                 <div class="card-footer">
@@ -256,18 +244,10 @@
         </div>
 
         <?php
-          $result = mysqli_query($conn,"SELECT * FROM picture;");
+          $result = mysqli_query($conn,"SELECT * FROM found;");
 
           $i=0;
           while($row = mysqli_fetch_array($result)) { ?>
-            <!-- // echo $row['image_id'];
-            // echo "<br>";
-            // echo $row['name'];
-            // echo "<br>";
-            // echo '<img src="'.$row['image'].'">';
-            // echo "<br>";
-            // echo "<br>";
-            // echo "<br>"; -->
             <div class="col-lg-4 col-md-6">
               <div class="card">
                 <?php echo '<img src="'.$row['image'].'" class="card-img-top" alt="parrot">';?> 
@@ -275,9 +255,9 @@
                   <h3 class="card-title"><strong>Mitto</strong></h3>
                   <p class="card-text">
                       <ul>
-                          <li>Size: <?php echo $row['image_id']; ?></li>
-                          <li>Age: <?php echo $row['name']; ?></li>
-                          <li>Breed: </li>
+                          <li>Size: <?php echo $row['size']; ?></li>
+                          <li>Age: <?php echo $row['age']; ?></li>
+                          <li>Breed: <?php echo $row['breed']; ?></li>
                       </ul>
                   </p>
                 </div>
