@@ -2,7 +2,6 @@
 
 # FURIESRescue
 <p> FURIESRescue is a website that focuses on the well being of animals and spreading awareness among the society. It helps to connect the pets with their love ones. For pets who unfortunately got disconnected from their loved ones, this website provides them a gold chance to connect with someone who needs them.</p>
-<p>Things that make our project unique is as we have gone through the sites in google which are some sort of similar on our core idea but in maximum of them there are issues that is they did not find any pet than they just say customize your search or no record found but in our website if you do not find any result based on your search than its save your search and if find anything in future then it will revert back to you. </p>
 
 ## 📋 WEB PAGES:
 
