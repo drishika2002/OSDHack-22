@@ -19,9 +19,11 @@
 <br>
   
 ## 📌TEAM MEMBERS:
-* https://github.com/drishika2002
-* https://github.com/HimanshiBaliyan
-* https://github.com/kgoel-kg
-* https://github.com/palakkhurana102
   
-  
+* <a href ="https://github.com/drishika2002">Drishika Chauhan</a>
+* <a href ="https://github.com/HimanshiBaliyan">Himanshi Baliyan</a>
+* <a href ="https://github.com/kgoel-kg">Khushi Goel</a>
+* <a href ="https://github.com/palakkhurana102">Palak Khurana</a>
+
+<img src="">
+<br>
