@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Dongle&family=Righteous&display=swap");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: rgb(212, 14, 14);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: rgb(88, 226, 8) !important;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #1b0c01;
+}
+.nav-link {
+  font-size: 18px;
+}
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(201, 201, 201, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+.btn {
+  border: 10px solid black;
+  border-radius: 50%;
+}
+
+.section {
+  margin-top: 7rem;
+  font-family: "Dongle", cursive;
+  font-size: 1.5rem;
+}
+
+.card {
+  margin: 2.5rem;
+}
+
+.card-img-top {
+  border: rgb(255, 255, 255) 10px solid;
+}
+
+.icon {
+  font-size: 2rem;
+  padding: 0 0 0 1rem;
+}
+
+.end-footer {
+  margin-top: 90px;
+  background-color: black;
+  height: 5vh;
+  width: 100%;
+}
