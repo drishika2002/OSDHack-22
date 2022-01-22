@@ -908,16 +908,13 @@
           <div class="col_md_sign_up">
             <div class="cont_ba_opcitiy">
               <h2>SIGN UP</h2>
-
               <p>Don't have an account. <br />Create one!</p>
-
               <button class="btn_sign_up" onclick="cambiar_sign_up()">
                 SIGN UP
               </button>
             </div>
           </div>
         </div>
-
         <div class="cont_back_info">
           <div class="cont_img_back_grey">
             <img
@@ -951,7 +948,6 @@
               </button>
             </form>
           </div>
-
           <div class="cont_form_sign_up">
             <a href="#" onclick="ocultar_login_sign_up()"
               ><i class="material-icons">&#xE5C4;</i></a
