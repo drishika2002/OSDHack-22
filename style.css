@@ -4,38 +4,101 @@
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
-
+body{
+  /* background-color: green; */
+  width:100%;
+  height: 100vh;
+  position: relative;
+}
+/* Animation */
+.anime{
+  background-color: #111;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.anime .row{
+  position: relative;
+  width: 100%;
+  top:-50%;
+  display: flex;
+  padding: 10px 0;
+  white-space: nowrap;
+  font-size: 64px;
+  transform: rotate(-30deg);
+}
+i{
+  color:rgba(0, 0, 0, 0.5);
+  transition: 1s;
+  padding: 0 2px;
+  user-select: none;
+  cursor: pointer;
+}
+i:hover{
+  transition: 0s;
+  color:#0f0;
+  text-shadow: 0 0 129px #0f0;
+}
+.anime .row div{
+  animation: animate1 80s linear infinite;
+  animation-delay: -80s;
+}
+.anime .row div:nth-child(2){
+  animation: animate2 80s linear infinite;
+  animation-delay: -40s;
+}
+@keyframes animate1{
+  0%{
+    transform: translate(100%);
+  }
+  100%{
+    transform: translate(-100%);
+  }
+}
+@keyframes animate2{
+  0%{
+    transform: translate(0%);
+  }
+  100%{
+    transform: translate(-200%);
+  }
+}
+.anime .row:nth-child(even) div{
+  animation: animate3 80s linear infinite;
+  animation-delay: -40s;
+}
+.anime .row:nth-child(even) div:nth-child(2){
+  animation: animate4 80s linear infinite;
+  animation-delay: -80s;
+}
+@keyframes animate3{
+  0%{
+    transform: translate(-100%);
+  }
+  100%{
+    transform: translate(100%);
+  }
+}
+@keyframes animate4{
+  0%{
+    transform: translate(-200%);
+  }
+  100%{
+    transform: translate(0%);
+  }
+}
+/* Login-signup Form */
 .cotn_principal {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-  background: #cfd8dc; /* Old browsers */
-  background: -moz-linear-gradient(
-    -45deg,
-    #cfd8dc 0%,
-    #607d8b 100%,
-    #b0bec5 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    -45deg,
-    #cfd8dc 0%,
-    #607d8b 100%,
-    #b0bec5 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    135deg,
-    #cfd8dc 0%,
-    #607d8b 100%,
-    #b0bec5 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-.cont_centrar {
-  position: relative;
-  float: left;
-  width: 100%;
+  width: auto;
+  height: auto;
+  /* background-color: red; */
+  z-index: 2;
+  margin-left: 40%;
 }
 
 .cont_login {
@@ -43,6 +106,7 @@
   width: 640px;
   left: 50%;
   margin-left: -320px;
+  margin-top: 15vh;
 }
 
 .cont_back_info {
@@ -366,4 +430,8 @@
   float: left;
   margin: 10px;
   margin-left: 30px;
+}
+input{
+  height:30px;
+  margin-top: 5px;
 }
