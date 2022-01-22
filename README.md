@@ -28,6 +28,10 @@
 
   ## SCREENSHOTS FOR MID REVIEW
   
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss1.png">
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss2.png">
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss3.png">
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss4.png">  
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/login.gif">
   
   
