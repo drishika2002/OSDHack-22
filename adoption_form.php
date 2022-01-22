@@ -174,7 +174,7 @@
 </script>
 </head>
 <body>
-<form class="form" action="x.php" method="post">
+<form class="form" action="adopt_form.php" method="post">
   <div role="main" class="form-all">
     <ul class="form-section page-section">
       <li class="form-line" data-type="control_image" id="id_52">
@@ -534,13 +534,6 @@
         </div>
       </li>
 
-      <li class="form-line" data-type="control_textbox" id="colour">
-        <label class="form-label form-label-left form-label-auto" id="colour" for="input_80"> Colour: </label>
-        <div id="cid_80" class="form-input">
-          <input type="text" id="input_80" name="colour" data-type="input-textbox" class="form-textbox" size="20" data-component="textbox" aria-labelledby="label_80" />
-        </div>
-      </li>
-      
       <li class="form-line jf-required" data-type="control_address" id="id_7">
         <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7_addr_line1" >
           Pet type
@@ -572,6 +565,14 @@
             </div>
           </div>
         </div>
+
+        <li class="form-line" data-type="control_textbox" id="colour">
+          <label class="form-label form-label-left form-label-auto" id="colour" for="input_80"> Colour: </label>
+          <div id="cid_80" class="form-input">
+            <input type="text" id="input_80" name="colour" data-type="input-textbox" class="form-textbox" size="20" data-component="textbox" aria-labelledby="label_80" />
+          </div>
+        </li>
+        
         <li class="form-line" data-type="control_textbox" id="id_80">
             <label class="form-label form-label-left form-label-auto" id="label_80" for="input_80"> Breed of pet: </label>
             <div id="cid_80" class="form-input">

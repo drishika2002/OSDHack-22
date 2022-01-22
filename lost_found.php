@@ -762,7 +762,6 @@
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
               <input type="tel" id="input_8_area" name="area" class="form-textbox" data-defaultvalue="" autoComplete="section-input_8 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_8 sublabel_8_area" />
               <span class="phone-separate" aria-hidden="true" required>
-                Â -
               </span>
               <label class="form-sub-label" for="input_8_area" id="sublabel_8_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
             </span>
