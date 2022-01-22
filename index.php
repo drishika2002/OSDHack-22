@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,11 +18,14 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="home.css" />
 
     <title>FURIES-Rescue website</title>
   </head>
   <body>
+    <?php
+      session_start();
+    ?>
     <header>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom">
@@ -46,14 +48,38 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-3">
-                <a class="nav-link links" href="lost_found.html"
-                  >Lost Request</a
-                >
+              <a class="nav-link links" href="
+                <?php
+                  if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                  {
+                    ?>
+                      register.php
+                    <?php
+                  }
+                  else{
+                    ?>
+                      lost_found.php
+                    <?php
+                  }
+                ?> 
+                ">Lost Request</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link links" href="lost_found.html"
-                  >Found Request</a
-                >
+                <a class="nav-link links" href="
+                  <?php
+                    if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                    {
+                      ?>
+                        register.php
+                      <?php
+                    }
+                    else{
+                      ?>
+                        lost_found.php
+                      <?php
+                    }
+                  ?> 
+                ">Found Request</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link links" href="adopt.php">Adoption</a>
@@ -64,9 +90,23 @@
               <li class="nav-item">
                 <a class="nav-link links" href="#end">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link links" href="register.php">Login/Signup</a>
-              </li>
+              <?php
+                if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                {
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="register.php">Sign Up</a>
+                    </li>
+                  <?php
+                }
+                else{
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="logout.php">Logout</a>
+                    </li>
+                  <?php
+                }
+              ?>
             </ul>
           </div>
         </div>
@@ -113,12 +153,22 @@
               height="700px"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: red">Did you lost or found the pet?</h5>
-              <a href="lost_found.html"
-                ><button type="button" class="btn btn-danger">
-                  Apply For Request
-                </button></a
-              >
+              <h5 style="color: red;">Did you lost or found the pet?</h5>
+              <a href="
+                <?php
+                  if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                  {
+                    ?>
+                      register.php
+                    <?php
+                  }
+                  else{
+                    ?>
+                      lost_found.php
+                    <?php
+                  }
+                ?> 
+              "><button type="button" class="btn btn-danger">Apply For Request</button></a>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
@@ -129,14 +179,22 @@
               height="700px"
             />
             <div class="carousel-caption d-none d-md-block">
-              <h5 style="color: rgb(54, 26, 26)">
-                Do you want to Adopt A Pet?
-              </h5>
-              <a href="lost_found.html"
-                ><button type="button" class="btn btn-secondary">
-                  Apply For Request
-                </button></a
-              >
+              <h5 style="color: rgb(54, 26, 26);">Do you want to Adopt A Pet?</h5>
+              <a href="
+                <?php
+                  if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                  {
+                    ?>
+                      register.php
+                    <?php
+                  }
+                  else{
+                    ?>
+                      adopt.php
+                    <?php
+                  }
+                ?> 
+              "><button type="button" class="btn btn-secondary" >Apply For Request</button></a>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
@@ -207,8 +265,8 @@
               <div class="card-body">
                 <blockquote class="blockquote mb-0">
                   <p>
-                    We Make A Living By What We Get, <br />
-                    We Make A Life By What We Give.
+                    We Make A Living By What We Get, <br> We Make A Life By What We
+                    Give.
                   </p>
                   <footer class="blockquote-footer">
                     Said by
@@ -223,9 +281,7 @@
               <div class="card-header">Quotes</div>
               <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                  <p>
-                    "Our perfect companions never have fewer than four feet."
-                  </p>
+                  <p>"Our perfect companions never have fewer than four feet."</p>
                   <footer class="blockquote-footer">
                     Said By
                     <cite title="Source Title">Colette</cite>
@@ -239,11 +295,7 @@
               <div class="card-header">Quotes</div>
               <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                  <p>
-                    There’s a saying. If you want someone to love you
-                    forever,<br />
-                    buy a dog, feed it and keep it around
-                  </p>
+                  <p>There’s a saying. If you want someone to love you forever,<br> buy a dog, feed it and keep it around</p>
                   <footer class="blockquote-footer">
                     Said By famous American Musician
                     <cite title="Source Title">Dick Dale</cite>
@@ -303,38 +355,12 @@
               </div>
             </div>
           </div>
-<<<<<<< HEAD
           <div class="col lg-4 md-6 sm-12">
             <div class="card stry mx-auto mt-sm-5 mt-md-3" style="width: 18rem">
               <img
                 src="https://images.pexels.com/photos/38867/pexels-photo-38867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top"
                 alt="..."
-=======
-
-          <div class="cont_form_sign_up">
-            <a href="#" onclick="ocultar_login_sign_up()"
-              ><i class="material-icons">&#xE5C4;</i></a
-            >
-            <h2>SIGN UP</h2>
-            <form
-              method="post"
-              action="signup.php"
-              enctype="multipart/form-data"
-            >
-              <input type="email" placeholder="Email" name="email" required />
-              <input
-                type="text"
-                placeholder="Username"
-                name="username"
-                required
-              />
-              <input
-                type="number"
-                placeholder="Mobile Number"
-                name="number"
-                required
->>>>>>> bef79dfbd8b1afe7a0c83bb0abb9f309212521a5
               />
               <div class="card-body">
                 <p class="card-text">
@@ -394,7 +420,7 @@
     <footer class="end" id="end">
       <div class="container">
         <div class="row">
-          <div class="col-2 sm-0"></div>
+          <div class="col-2  sm-0"></div>
           <div class="col-3 sm-12">
             <i class="fal fa-copyright"></i>
             Designed by Techie Divas
