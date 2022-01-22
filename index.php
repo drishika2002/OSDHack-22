@@ -30,7 +30,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom">
         <div class="container">
-          <a class="navbar-brand" href="home.html"
+          <a class="navbar-brand" href="index.php"
             ><span class="logo1"><i class="fas fa-paw"></i>FURIES</span
             ><span class="logo2" style="color: #000">Rescue</span></a
           >
