@@ -1,30 +1,13 @@
-*,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*,body{
   margin: 0;
   padding: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
-/* Color of the links BEFORE scroll */
-.navbar-scroll .nav-link,
-.navbar-scroll .navbar-toggler-icon,
-.navbar-scroll .navbar-brand {
-  color: rgb(212, 14, 14);
-}
 
-/* Color of the links AFTER scroll */
-.navbar-scrolled .nav-link,
-.navbar-scrolled .navbar-toggler-icon,
-.navbar-scrolled .navbar-brand {
-  color: rgb(88, 226, 8) !important;
-}
-
-/* Color of the navbar AFTER scroll */
-.navbar-scrolled {
-  background-color: #1b0c01;
-}
-.nav-link {
+.nav-link{
   font-size: 18px;
 }
+
 .mask-custom {
   backdrop-filter: blur(5px);
   background-color: rgba(97, 96, 96, 0.15);
@@ -34,12 +17,12 @@ body {
   font-size: 1.75rem;
   letter-spacing: 2px;
 }
-.logo1 {
+.logo1{
   background-color: black;
   padding: 5px;
-  color: #fff;
+  color:#fff;
 }
-.circle {
+.circle{
   border: 10px solid black;
 }
 
@@ -48,44 +31,78 @@ body {
   margin-top: 0;
 }
 
-h2 {
+h2{
   text-align: center;
 }
-#features {
+#features
+{
   padding: 6% 14%;
 }
 
-.feature-box {
-  text-align: center;
-  padding: 4.25%;
+.feature-box
+{
+    text-align: center;
+    padding: 4.25%;
 }
 
-.icons {
+
+.icons
+{
   align-items: center;
   color: #ef8172;
   margin-bottom: 1rem;
 }
-.icons:hover {
+.icons:hover
+{
   color: #ff4c68;
 }
-.quotesbg {
+.quotesbg{
   height: auto;
   background-color: #ef8172;
 }
-.quotes {
-  width: 80%;
+.quotes{
+  width:80%;
 }
-.speak {
+.speak{
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
-.card-img-top {
+.card-img-top{
   height: 350px;
   overflow: hidden;
 }
-.mt-sm-5 {
+.mt-sm-5{
   margin-top: 5vh;
 }
-.lg-3 {
-  width: 200px;
+.lg-3{
+  width:200px;
+}
+.stry:hover{
+  box-shadow: 3px 2px 8px grey;
+  cursor:pointer;
+  background-color: rgb(168, 167, 167);
+  color:white;
+}
+.stry:hover .card-img-top{
+  transform: scale(1.1);
+}
+.storyBtn:hover{
+  background-color: #ef8172;
+  box-shadow:3px 3px 8px  black;
+}
+.end{
+  background-color: black;
+  color: #fff;
+  height: auto;
+  line-height: 50px;
+}
+.footer-link li{
+  list-style: none;
+  float:right;
+}
+.footer-link li a{
+  color:#fff;
+}
+.footer-link li a:hover{
+  color:#ef8172;
 }
