@@ -25,3 +25,13 @@
 * <a href ="https://github.com/kgoel-kg">Khushi Goel</a>
 * <a href ="https://github.com/palakkhurana102">Palak Khurana</a>
 <br>
+
+  ## SCREENSHOTS FOR MID REVIEW
+  
+  <img src="">
+  
+  <br>
+  
+  <img scr="">
+  
+  
