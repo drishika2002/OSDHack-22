@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html class="supernova"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
 <meta name="HandheldFriendly" content="true" />
@@ -14,6 +30,25 @@
 <link rel="stylesheet" href="adoption_form.css">
 
 <style type="text/css">
+    .nav-link{
+    font-size: 18px;
+    }
+
+    .mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(97, 96, 96, 0.15);
+    margin-bottom: 80px;
+    }
+
+    .navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    }
+    .logo1{
+    background-color: black;
+    padding: 5px;
+    color:#fff;
+    }
     .form-label-left{
         width:150px;
     }
@@ -29,9 +64,8 @@
         padding:0;
         background:rgba(0, 0, 0, 0.72);
     }
-
     .form-all{
-        margin:0px auto;
+        margin:80px auto;
         padding-top:20px;
         width:550px;
         color:rgb(255, 255, 255) !important;
@@ -41,7 +75,6 @@
     .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
         color: rgb(57, 79, 95);
     }
-
 </style>
 
 <style type="text/css" id="form-designer-style">
@@ -174,6 +207,93 @@
 </script>
 </head>
 <body>
+<header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom">
+        <div class="container">
+          <a class="navbar-brand" href="index.php"
+            ><span class="logo1"><i class="fas fa-paw"></i>FURIES</span
+            ><span class="logo2" style="color: #000">Rescue</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+              <a class="nav-link links" href="
+                <?php
+                  if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                  {
+                    ?>
+                      register.php
+                    <?php
+                  }
+                  else{
+                    ?>
+                      lost_found.php
+                    <?php
+                  }
+                ?> 
+                ">Lost Request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="
+                  <?php
+                    if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                    {
+                      ?>
+                        register.php
+                      <?php
+                    }
+                    else{
+                      ?>
+                        lost_found.php
+                      <?php
+                    }
+                  ?> 
+                ">Found Request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="adopt.php">Adoption</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#features">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#end">Contact</a>
+              </li>
+              <?php
+                if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                {
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="register.php">Sign Up</a>
+                    </li>
+                  <?php
+                }
+                else{
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="logout.php">Logout</a>
+                    </li>
+                  <?php
+                }
+              ?>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
 <form class="form" action="adopt_form.php" method="post">
   <div role="main" class="form-all">
     <ul class="form-section page-section">
@@ -185,7 +305,6 @@
           </div>
         </div>
       </li>
-
       <li class="form-line jf-required" data-type="control_fullname" id="id_20">
         <label class="form-label form-label-left form-label-auto" id="label_20" for="first_20">
           Your Name
@@ -235,7 +354,6 @@
           <input type="email" id="input_6" name="q6_email6" class="form-textbox validate[required, Email]" data-defaultvalue="" size="30" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_6" required="" />
         </div>
       </li>
-
       <li class="form-line jf-required" data-type="control_address" id="id_7">
         <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7_addr_line1" name = "location">
          Where do you live?
@@ -533,7 +651,6 @@
           </div>
         </div>
       </li>
-
       <li class="form-line jf-required" data-type="control_address" id="id_7">
         <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7_addr_line1" >
           Pet type
@@ -565,7 +682,6 @@
             </div>
           </div>
         </div>
-
         <li class="form-line" data-type="control_textbox" id="colour">
           <label class="form-label form-label-left form-label-auto" id="colour" for="input_80"> Colour: </label>
           <div id="cid_80" class="form-input">
@@ -668,7 +784,6 @@
         </div>
       </li>
       
-
       
       
    </form>
@@ -694,33 +809,6 @@
     </ul>
   </div>
   </form>
-
-  <footer class="end" id="end">
-    <div class="container">
-      <div class="row">
-        <div class="col-2 sm-0"></div>
-        <div class="col-3 sm-12">
-          <i class="fal fa-copyright"></i>
-          Designed by Techie Divas
-        </div>
-        <div class="col-5 sm-0"></div>
-        <div class="col-2 sm-12">
-          <ul class="footer-link">
-            <li>
-              <a class="nav-link" href="#!">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a class="nav-link" href="#!">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
