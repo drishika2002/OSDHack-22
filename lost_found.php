@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html class="supernova"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
-<meta name="HandheldFriendly" content="true" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 <title>Furisrescue</title>
 <link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.30220" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/baby_blue.css?3.3.30220" />
@@ -14,6 +29,25 @@
 <link rel="stylesheet" href="adoption_form.css">
 
 <style type="text/css">
+    .nav-link{
+      font-size: 18px;
+    }
+
+    .mask-custom {
+      backdrop-filter: blur(5px);
+      background-color: rgba(97, 96, 96, 0.15);
+      margin-bottom: 80px;
+    }
+
+    .navbar-brand {
+      font-size: 1.75rem;
+      letter-spacing: 2px;
+    }
+    .logo1{
+      background-color: black;
+      padding: 5px;
+      color:#fff;
+    }
     .form-label-left{
         width:150px;
     }
@@ -29,9 +63,8 @@
         padding:0;
         background:rgba(0, 0, 0, 0.72);
     }
-
     .form-all{
-        margin:0px auto;
+        margin:80px auto;
         padding-top:20px;
         width:550px;
         color:rgb(255, 255, 255) !important;
@@ -41,7 +74,22 @@
     .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
         color: rgb(57, 79, 95);
     }
-
+    .end{
+      background-color: black;
+      color: #fff;
+      height: auto;
+      line-height: 50px;
+    }
+    .footer-link li{
+      list-style: none;
+      float:right;
+    }
+    .footer-link li a{
+      color:#fff;
+    }
+    .footer-link li a:hover{
+      color:#ef8172;
+    }
 </style>
 
 <style type="text/css" id="form-designer-style">
@@ -169,13 +217,95 @@
 <script src="https://cdn03.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
 <script src="https://cdn01.jotfor.ms/static/jotform.forms.js?3.3.30220" type="text/javascript"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
-
- 
-
-   
-</script>
 </head>
 <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom">
+        <div class="container">
+          <a class="navbar-brand" href="index.php"
+            ><span class="logo1"><i class="fas fa-paw"></i>FURIES</span
+            ><span class="logo2" style="color: #000">Rescue</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+              <a class="nav-link links" href="
+                <?php
+                  if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                  {
+                    ?>
+                      register.php
+                    <?php
+                  }
+                  else{
+                    ?>
+                      lost_found.php
+                    <?php
+                  }
+                ?> 
+                ">Lost Request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="
+                  <?php
+                    if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                    {
+                      ?>
+                        register.php
+                      <?php
+                    }
+                    else{
+                      ?>
+                        lost_found.php
+                      <?php
+                    }
+                  ?> 
+                ">Found Request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="adopt.php">Adoption</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#features">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links" href="#end">Contact</a>
+              </li>
+              <?php
+                if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                {
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="register.php">Sign Up</a>
+                    </li>
+                  <?php
+                }
+                else{
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="logout.php">Logout</a>
+                    </li>
+                  <?php
+                }
+              ?>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
 <form class="form" action="x.php" method="post" name="form_220184261971454" id="220184261971454" accept-charset="utf-8" autocomplete="on">
   <input type="hidden" name="formID" value="220184261971454" />
   <input type="hidden" id="JWTContainer" value="" />
@@ -216,14 +346,14 @@
             <span class="form-sub-label-container" style="vertical-align:top">
               <input type="tel" class="form-textbox validate[limitDate]" id="month_73" name="month" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_73 off" aria-labelledby="label_73 sublabel_73_month"  required/>
               <span class="date-separate" aria-hidden="true">
-                Â -
+                Â -
               </span>
               <label class="form-sub-label" for="month_73" id="sublabel_73_month" style="min-height:13px" aria-hidden="false" > Month </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top">
               <input type="tel" class="form-textbox validate[limitDate]" id="day_73" name="day" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="section-input_73 off" aria-labelledby="label_73 sublabel_73_day" />
               <span class="date-separate" aria-hidden="true" required>
-                Â -
+                Â -
               </span>
               <label class="form-sub-label" for="day_73" id="sublabel_73_day" style="min-height:13px" aria-hidden="false" > Day </label>
             </span>
@@ -581,7 +711,6 @@
           </div>
         </div>
       </li>
-
       
       <li class="form-line" data-type="control_textbox" id="colour">
         <label class="form-label form-label-left form-label-auto" id="colour" for="input_80"> Colour: </label>
@@ -762,6 +891,7 @@
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
               <input type="tel" id="input_8_area" name="area" class="form-textbox" data-defaultvalue="" autoComplete="section-input_8 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_8 sublabel_8_area" />
               <span class="phone-separate" aria-hidden="true" required>
+                Â -
               </span>
               <label class="form-sub-label" for="input_8_area" id="sublabel_8_area" style="min-height:13px" aria-hidden="false"> Area Code </label>
             </span>
@@ -800,7 +930,6 @@
       <br />
         </div>
       </li>
-   </form>
       <li class="form-line" data-type="control_textarea" id="id_28">
         <label class="form-label form-label-left form-label-auto" id="label_28" for="input_28"> Any additonal information you'd like to share. </label>
         <div id="cid_28" class="form-input">
@@ -816,32 +945,7 @@
         </div>
       </li>
   </form>
-  <footer class="end" id="end">
-      <div class="container">
-        <div class="row">
-          <div class="col-2 sm-0"></div>
-          <div class="col-3 sm-12">
-            <i class="fal fa-copyright"></i>
-            Designed by Techie Divas
-          </div>
-          <div class="col-5 sm-0"></div>
-          <div class="col-2 sm-12">
-            <ul class="footer-link">
-              <li>
-                <a class="nav-link" href="#!">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#!">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+  
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
