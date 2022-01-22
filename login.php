@@ -14,6 +14,16 @@ if (isset($_POST['submit']) )
      $result= mysqli_query($con,$s);
      $num = mysqli_num_rows($result);
 
+     $row = mysqli_fetch_array($result);
+     if(is_array(($row)))
+     {
+        $_SESSION["email"] = $row["email"];
+        $_SESSION["password"] = $row["password"];
+     }
+     else{
+        echo "<script>alert('Your account does not exist... Please create one!'); window.location='register.php'</script>";
+     }
+
     if($num){
         header('location:index.php');
     }
