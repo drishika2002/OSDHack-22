@@ -407,7 +407,7 @@
             </div>
           </div>
           <div class="row">
-          <div class="d-grid gap-2 col-1 mx-auto mt-5">
+          <div class="d-grid gap-2 col-2 mx-auto mt-5">
             <a href="
               <?php
               if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
