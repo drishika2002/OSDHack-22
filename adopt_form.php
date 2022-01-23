@@ -27,9 +27,10 @@ if (isset($_POST['submit']) )
          $email= $_POST['q6_email6'];
          $info= $_POST['q28_pleaseDescribe'];
    
-    $sql = "INSERT INTO table_name (firstname, lastname, area, num, email, line1 , city , state, zip, country, pettype, colour, breed, gender, size, age, info) VALUES ('$firstname','$lastname','$area','$num','$email','$line1','$city','$state','$zip','$country','$pettype','$colour','$breed','$gender','$size','$age','$info')";
+    $sql = "INSERT INTO adoption (firstname, lastname, area, num, email, line1 , city , state, zip, country, pettype, colour, breed, gender, size, age, info) VALUES ('$firstname','$lastname','$area','$num','$email','$line1','$city','$state','$zip','$country','$pettype','$colour','$breed','$gender','$size','$age','$info')";
     mysqli_query($con, $sql);
 
     echo "Adoption Form filled successfully!";
+    header("Location:index.php");
 }
 ?>
