@@ -267,10 +267,10 @@
                 <a class="nav-link links" href="adopt.php">Adoption</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link links" href="#features">About</a>
+                <a class="nav-link links" href="index.php">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link links" href="#end">Contact</a>
+                <a class="nav-link links" href="index.php">Contact</a>
               </li>
               <?php
                 if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
