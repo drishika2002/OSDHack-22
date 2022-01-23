@@ -5,6 +5,10 @@
 
 <p>We also provide a home to stray animals and physically disabled animals. We encourage people to take an initiative to adopt these animals by providing the adoption facility on our website.</p>
 
+## 🎥 VIDEO DEMO: 
+
+<p>To check it out, <a href="https://drive.google.com/file/d/1f51BzE5QoI_BcTKeil1uqycgzBwaQuhp/view?usp=sharing"><strong>Click Here!</strong></p>
+
 ## 📋 WEB PAGES:
 
 * Registration (Login/SignUp)
