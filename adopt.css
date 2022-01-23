@@ -46,7 +46,10 @@ body {
   font-size: 2rem;
   padding: 0 0 0 1rem;
 }
-
+.btn:hover{
+    box-shadow: 8px 8px 8px grey;
+    color:white;
+}
 .end {
   background-color: black;
   color: #fff;
