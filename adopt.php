@@ -336,9 +336,9 @@
         class="btn btn-danger text-nowrap"
         type="button"
 
-      ></a>
+      >
         Adoption Request
-      </button>
+      </button></a>
     </div>
     <footer class="end" id="end">
       <div class="container">
