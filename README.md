@@ -45,4 +45,10 @@
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss5.png">  
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss6.PNG">  
   
+  ### 📌LOST PERS AND ADOPT PET 
   
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss6.PNG">  
+
+  ### 📌ADOPTION FORM
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss7.png">
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss8.png">  
