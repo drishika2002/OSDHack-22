@@ -29,7 +29,8 @@
 * <a href ="https://github.com/palakkhurana102">Palak Khurana</a>
 <br>
 
-  ## SCREENSHOTS FOR MID REVIEW
+  ## SCREENSHOTS OF THE WEBSITE:
+  
   ### 📌HOME PAGE
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss1.png">
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss2.png">
@@ -45,7 +46,7 @@
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss5.png">  
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss6.PNG">  
   
-  ### 📌LOST PERS AND ADOPT PET 
+  ### 📌LOST PETS AND ADOPT PETS PAGE
   
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss6.PNG">  
 
