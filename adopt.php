@@ -1,15 +1,12 @@
 <?php
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $dbname = "form";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "form";
 
-      $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-      
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
 ?>
-
-
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,11 +32,12 @@
     <title>Adoption page</title>
   </head>
   <body style="background-color: #fdf9f5">
-    <header>
+    
+  <header>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom">
         <div class="container">
-          <a class="navbar-brand" href="home.html"
+          <a class="navbar-brand" href="index.php"
             ><span class="logo1"><i class="fas fa-paw"></i>FURIES</span
             ><span class="logo2" style="color: #000">Rescue</span></a
           >
@@ -57,14 +55,38 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-3">
-                <a class="nav-link links" href="lost_found.html"
-                  >Lost Request</a
-                >
+              <a class="nav-link links" href="
+                <?php
+                  if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                  {
+                    ?>
+                      register.php
+                    <?php
+                  }
+                  else{
+                    ?>
+                      lost_found.php
+                    <?php
+                  }
+                ?> 
+                ">Lost Request</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link links" href="lost_found.html"
-                  >Found Request</a
-                >
+                <a class="nav-link links" href="
+                  <?php
+                    if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                    {
+                      ?>
+                        register.php
+                      <?php
+                    }
+                    else{
+                      ?>
+                        lost_found.php
+                      <?php
+                    }
+                  ?> 
+                ">Found Request</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link links" href="adopt.php">Adoption</a>
@@ -75,13 +97,29 @@
               <li class="nav-item">
                 <a class="nav-link links" href="#end">Contact</a>
               </li>
+              <?php
+                if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+                {
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="register.php">Sign Up</a>
+                    </li>
+                  <?php
+                }
+                else{
+                  ?>
+                    <li class="nav-item">
+                      <a class="nav-link links" href="logout.php">Logout</a>
+                    </li>
+                  <?php
+                }
+              ?>
             </ul>
           </div>
         </div>
       </nav>
       <!-- Navbar -->
-    </header>
-
+</header>
     <section class="container section">
       <h2>Please Help! We need your support...</h2>
       <h3>
@@ -278,7 +316,30 @@
           <?php  $i++; }?>
       </div>
     </section>
+    <div class="d-grid gap-2 col-1 mx-auto mt-5">
+      <a href="
+        <?php
+        if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+        {
+          ?>
+            register.php
+          <?php
+        }
+        else{
+          ?>
+            adoption_form.php
+          <?php
+        }
+      ?>
+      ">
+      <button
+        class="btn btn-danger text-nowrap"
+        type="button"
 
+      ></a>
+        Adoption Request
+      </button>
+    </div>
     <footer class="end" id="end">
       <div class="container">
         <div class="row">
