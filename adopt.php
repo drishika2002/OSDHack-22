@@ -96,15 +96,16 @@
               <h3 class="card-title"><strong>Oggy</strong></h3>
               <p class="card-text">
                   <ul>
-                      <li>Size: </li>
-                      <li>Age: </li>
-                      <li>Breed: </li>
+                      <li>Size: Medium</li>
+                      <li>Age: Young </li>
+                      <li>Breed: Persian </li>
                   </ul>
               </p>
             </div>
             
             <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp; 1234567890 </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;yxz@gmail.com</i></small>
             </div>
           </div>
         </div>
@@ -115,14 +116,15 @@
             <h3 class="card-title"><strong>Sheru</strong></h3>
             <p class="card-text">
                 <ul>
-                    <li>Size: </li>
-                    <li>Age: </li>
-                    <li>Breed: </li>
+                    <li>Size: Medium </li>
+                    <li>Age: Adult</li>
+                    <li>Breed: Bulldog</li>
                 </ul>
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+          <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp; 1234567890 </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;abc@gmail.com</i></small>
           </div>
         </div>
         </div>
@@ -134,14 +136,15 @@
               <h3 class="card-title"><strong>Mitto</strong></h3>
               <p class="card-text">
                   <ul>
-                      <li>Size: </li>
-                      <li>Age: </li>
-                      <li>Breed: </li>
+                      <li>Size: Small</li>
+                      <li>Age: Young adult</li>
+                      <li>Breed: Cockatiel </li>
                   </ul>
               </p>
             </div>
             <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp; 1234567890 </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;xyz@gmail.com</i></small>
             </div>
           </div>
         </div>
@@ -157,7 +160,7 @@
               <div class="card">
                 <?php echo '<img src="'.$row['image'].'" class="card-img-top" alt="parrot">';?> 
                 <div class="card-body">
-                  <h3 class="card-title"><strong>Mitto</strong></h3>
+                  <h3 class="card-title"><strong><?php echo $row['name'];?></strong></h3>
                   <p class="card-text">
                       <ul>
                           <li>Size: <?php echo $row['size']; ?></li>
@@ -168,7 +171,8 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+                  <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;<?php echo $row['num'];?> </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;<?php echo $row['email'];?></i></small>
                 </div>
               </div>
             </div>
@@ -192,14 +196,15 @@
               <h3 class="card-title"><strong>Bob</strong></h3>
               <p class="card-text">
                 <ul>
-                    <li>Size: </li>
-                    <li>Age: </li>
-                    <li>Breed: </li>
+                    <li>Size: Medium</li>
+                    <li>Age: Baby</li>
+                    <li>Breed: Poodle</li>
                 </ul>
               </p>
             </div>
             <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp; 1234567890 </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;jku@gmail.com</i></small>
             </div>
           </div>
         </div>
@@ -211,14 +216,16 @@
               <h3 class="card-title"><strong>Olli</strong></h3>
               <p class="card-text">
                   <ul>
-                      <li>Size: </li>
-                      <li>Age: </li>
-                      <li>Breed: </li>
+                      <li>Size: Medium</li>
+                      <li>Age: Young</li>
+                      <li>Breed: Maine</li>
                   </ul>
               </p>
             </div>
             <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+              
+            <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp; 1234567890 </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;def@gmail.com</i></small>
             </div>
           </div>
         </div>
@@ -231,14 +238,15 @@
               <h3 class="card-title"><strong>Mitti</strong></h3>
               <p class="card-text">
                   <ul>
-                      <li>Size: </li>
-                      <li>Age: </li>
-                      <li>Breed: </li>
+                      <li>Size: Small</li>
+                      <li>Age: Young</li>
+                      <li>Breed: Indian ringneck</li>
                   </ul>
               </p>
             </div>
             <div class="card-footer">
-              <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+            <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp; 1234567890 </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;klm@gmail.com</i></small>
             </div>
           </div>
         </div>
@@ -252,7 +260,7 @@
               <div class="card">
                 <?php echo '<img src="'.$row['image'].'" class="card-img-top" alt="parrot">';?> 
                 <div class="card-body">
-                  <h3 class="card-title"><strong>Mitto</strong></h3>
+                  <h3 class="card-title"><strong> <?php echo $row['name']; ?></strong></h3>
                   <p class="card-text">
                       <ul>
                           <li>Size: <?php echo $row['size']; ?></li>
@@ -262,7 +270,8 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted"><i class="fas fa-phone-volume icon"></i> <i class="fas fa-envelope icon"></i></small>
+                <small class="text-muted"><i class="fas fa-phone-volume icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;<?php echo $row['num'];?> </i><br>
+                   <i class="fas fa-envelope icon" style= "font-size:1rem;">&nbsp;&nbsp;&nbsp;<?php echo $row['email'];?></i></small>
                 </div>
               </div>
             </div>
