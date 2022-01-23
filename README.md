@@ -48,6 +48,9 @@
   
   ### 📌LOST PETS AND ADOPT PETS PAGE
   
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss9.PNG">  
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss10.PNG">  
+  <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss11.PNG"> 
 
   ### 📌ADOPTION FORM
   <img src="https://github.com/drishika2002/OSDHack-22/blob/main/assets/ss7.png">
