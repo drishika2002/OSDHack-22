@@ -406,13 +406,30 @@
               </div>
             </div>
           </div>
-          <div class="d-grid gap-2 col-6 lg-3 mx-auto mt-5">
+          <div class="row">
+          <div class="d-grid gap-2 col-1 mx-auto mt-5">
+            <a href="
+              <?php
+              if(!isset($_SESSION["email"]) || empty($_SESSION["email"]))
+              {
+                ?>
+                  register.php
+                <?php
+              }
+              else{
+                ?>
+                  mailto:himanshi.baliyan05@gmail.com
+                <?php
+              }
+            ?>
+            ">
             <button
-              class="btn btn-secondary storyBtn text-nowrap"
+              class="btn btn-danger text-nowrap"
               type="button"
             >
-              Share Your Stories
-            </button>
+              Share Your Experience
+            </button></a>
+          </div> 
           </div>
         </div>
       </div>
